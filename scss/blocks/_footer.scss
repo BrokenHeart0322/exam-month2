@@ -1,0 +1,105 @@
+.foot{
+    margin-top: 5rem;
+
+    &__card1{
+        background-image: url("../../images/Mask.png");
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem 7%;
+
+        h2{
+            font-size: 44px;
+            line-height: 100%;
+            color: whitesmoke;
+            width: 40%;
+        }
+        &__btns{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            a img{
+                max-width: 100%;
+            }
+            a img:hover{
+                max-width: 120%;
+            }
+        }
+        
+    }
+    &__card2{
+        background-color: rgba(51, 58, 68, 1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 7%;
+
+        &__nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 44px;
+
+            a{
+                text-decoration: none;
+                color: rgba(147, 156, 170, 1);
+                font-size: 14px;
+                font-weight: 600;
+            }
+            a:hover{
+                color: rgba(252, 183, 43, 1);
+            }
+        }
+        &__icns{
+            display: flex;
+            gap: 25px;
+            a{
+                text-decoration: none;
+                color: rgba(252, 183, 43, 1);
+                font-size: 22px;
+            }
+            a:hover{
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:890px) {
+    .foot{
+        &__card1{
+            flex-direction: column;
+            background-image: url("../../images/Mask-T.png");
+            background-size: 100% 100%; 
+
+            h2{
+                width: 80%;
+            }
+        }
+    }
+}
+@media screen and(max-width:430px) {
+    .foot{
+        &__card1{
+            flex-direction: column;
+            background-image: url("../../images/foot-M.png");
+            background-size: 100% 100%; 
+
+            h2{
+                font-size: 32px;
+                width: 95%;
+            }
+
+        }
+        &__card2{
+            flex-direction: column;
+            gap: 5rem;
+
+            &__nav{
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+    }
+}
